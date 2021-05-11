@@ -4,7 +4,7 @@ h1, h2, h3 {
 
 .main-content {
   width: 500px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 15px;
   border: 4px dashed purple;
   font-family: Arial, Helvetica, sans-serif;
@@ -22,6 +22,7 @@ h3 {
 
 .description {
   margin-top: 10px;
+  text-align: justify;
 }
 
 .divider {

@@ -1,7 +1,10 @@
+import PropTypes from 'prop-types'
+import ContentModel from '../../Models/ContentModel';
+
 const ShopItemFunc = ({ item }) => {
   return (
     <div className='main-content'>
-      <h2>{item.brand}</h2>
+      <h2>{item.name}</h2>
       <h1>{item.title}</h1>
       <h3>{item.description}</h3>
       <div className='description'>{item.descriptionFull}</div>
@@ -16,5 +19,9 @@ const ShopItemFunc = ({ item }) => {
     </div>
   );
 };
+
+ShopItemFunc.propTypes = {
+  item: PropTypes.instanceOf(ContentModel).isRequired
+}
 
 export default ShopItemFunc;
